@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editInventorisationBarcode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:text="Barkodas"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="63dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editInventorisationAmount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:text="Kiekis"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="189dp" />
+
+    <EditText
+        android:id="@+id/editInventorisationBarcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editInventorisationAmount"
+        android:layout_alignLeft="@+id/editInventorisationAmount"
+        android:layout_alignStart="@+id/editInventorisationAmount"
+        android:layout_marginBottom="107dp"
+        android:ems="10"
+        android:inputType="phone"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="108dp" />
+
+    <EditText
+        android:id="@+id/editInventorisationAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonSaveInventorisation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="72dp"
+        android:ems="10"
+        android:inputType="phone"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="232dp" />
+
+    <Button
+        android:id="@+id/buttonSaveInventorisation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonDeleteInventorisation"
+        android:layout_alignBottom="@+id/buttonDeleteInventorisation"
+        android:layout_toLeftOf="@+id/textView13"
+        android:layout_toStartOf="@+id/textView13"
+        android:text="Saugoti"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="420dp" />
+
+    <Button
+        android:id="@+id/buttonDeleteInventorisation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="43dp"
+        android:layout_toEndOf="@+id/textView13"
+        android:layout_toRightOf="@+id/textView13"
+        android:text="Ištrinti"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="420dp" />
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <CheckBox
+        android:id="@+id/checkboxbarcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/textView8"
+        android:text="Brūkšninis kodas" />
+
+    <CheckBox
+        android:id="@+id/checkboxproductname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/checkboxbarcode"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Pavadinimas" />
+
+
+    <EditText
+        android:id="@+id/editproductname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/editbarcode"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:hint="Prekės pavadinimas"
+        android:inputType="text"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editbarcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editproductname"
+        android:layout_alignStart="@+id/editproductname"
+        android:layout_below="@+id/checkboxbarcode"
+        android:layout_marginTop="125dp"
+        android:ems="10"
+        android:hint="Brūkšninis kodas"
+        android:inputType="number"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:text="Ieškoti pagal"
+        android:textAppearance="@android:style/TextAppearance.Material" />
+
+    <Button
+        android:id="@+id/buttonfilterproductlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Filtruoti"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"/>
+
+
+</RelativeLayout>

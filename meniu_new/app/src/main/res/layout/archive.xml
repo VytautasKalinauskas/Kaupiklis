@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <CheckBox
+        android:id="@+id/checkboxdoknr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/textView8"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:text="Dokumento nr" />
+
+    <CheckBox
+        android:id="@+id/checkboxdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/checkboxdoknr"
+        android:layout_marginLeft="16dp"
+        android:text="Data" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkboxdoknr"
+        android:layout_alignBottom="@+id/checkboxdoknr"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="25dp"
+        android:text="Filtruoti pagal"
+        android:textAppearance="@android:style/TextAppearance.Material" />
+
+    <EditText
+        android:id="@+id/editdatefrom"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginBottom="149dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="data nuo"
+        android:inputType="date"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="208dp" />
+
+    <EditText
+        android:id="@+id/editdateto"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editdatefrom"
+        android:layout_alignBottom="@+id/editdatefrom"
+        android:layout_alignLeft="@+id/editdatefrom"
+        android:layout_alignStart="@+id/editdatefrom"
+        android:layout_marginLeft="197dp"
+        android:layout_marginStart="197dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="data iki"
+        android:inputType="textPersonName"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editdoknr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editdatefrom"
+        android:layout_alignStart="@+id/editdatefrom"
+        android:layout_below="@+id/checkboxdoknr"
+        android:layout_marginTop="93dp"
+        android:ems="10"
+        android:hint="Dokumento nr"
+        android:inputType="textPersonName"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonfilterarchive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Filtruoti" />
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.kaupiklis.vytkal.meniu.BarcodeInputActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="121dp"
+            android:text="Toliau"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="147dp"
+            tools:layout_editor_absoluteY="365dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editBarcode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="86dp"
+            android:text="Brūkšninis kodas"
+            android:textAppearance="@android:style/TextAppearance.Material.Headline" />
+
+        <EditText
+            android:id="@+id/editBarcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonNext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="77dp"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="13"
+            android:textAlignment="center"
+            android:focusable="true">
+            <requestFocus />
+        </EditText>
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

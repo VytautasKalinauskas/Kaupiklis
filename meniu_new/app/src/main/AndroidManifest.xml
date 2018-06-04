@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kaupiklis.vytkal.meniu">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/scanner_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:label="Kaupiklis">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ProductListActivity"
+            android:screenOrientation="portrait"
+            android:label="Prekių sąrašas"/>
+
+        <activity android:label="@string/scanner"
+            android:name=".ScannerActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ScannerDBActivity"
+            android:screenOrientation="portrait"
+            android:label="Kiekio įvedimas"/>
+
+        <activity android:name=".ArchiveActivity"
+            android:screenOrientation="portrait"
+            android:label="Archyvas"/>
+
+        <activity android:name=".BarcodeInputActivity"
+            android:windowSoftInputMode = "stateVisible"
+            android:screenOrientation="portrait"
+            android:label="Brūkšninio kodo įvedimas"/>
+
+        <activity android:name=".AdminSettingsActivity"
+            android:screenOrientation="portrait"
+            android:label="Administratoriaus nustatymai">
+        </activity>
+
+
+        <activity android:name=".SettingsActivity"
+            android:screenOrientation="portrait"
+            android:label="Nustatymai">
+        </activity>
+
+        <activity android:name=".DocumentNrInputActivity"
+            android:screenOrientation="portrait"
+            android:label="Inventorizacija">
+        </activity>
+
+        <activity android:name=".FtpHelper"></activity>
+
+        <activity android:name=".ContactActivity"
+            android:screenOrientation="portrait"
+            android:label="Kontaktai">
+        </activity>
+
+        <activity android:name=".InventorisationListActivity"></activity>
+        <activity android:name=".InventorisationEditActivity" />
+
+    </application>
+
+</manifest>

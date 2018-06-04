@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.kaupiklis.vytkal.meniu.ScannerDBActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:id="@+id/drawerLayout2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/saugoti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/rounded_button"
+            android:text="Saugoti"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/barcode"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/dokNr"
+            android:layout_below="@id/dokNr"
+            android:layout_marginTop="30dp"
+            android:text="TextView"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/dokNr"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignLeft="@+id/prekesPav"
+            android:layout_alignStart="@+id/prekesPav"
+            android:text="TextView"
+            android:textAlignment="gravity"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/kiekis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/amount"
+            android:layout_alignLeft="@+id/textView7"
+            android:layout_alignStart="@+id/textView7"
+            android:layout_marginBottom="16dp"
+            android:text="Kiekis"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/saugoti"
+            android:layout_alignLeft="@+id/kiekis"
+            android:layout_alignStart="@+id/kiekis"
+            android:layout_marginBottom="21dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:text="Dokumento nr"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/textView5"
+            android:layout_below="@id/textView5"
+            android:layout_marginTop="30dp"
+            android:text="Brūkšninis kodas"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/baigti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/rounded_button"
+            android:text="Baigti darbą"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/textView5"
+            android:layout_below="@id/textView6"
+            android:layout_marginTop="30dp"
+            android:text="Pavadinimas"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/prekesPav"
+            android:layout_width="180dp"
+            android:layout_height="60sp"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="TextView"
+            android:textAlignment="gravity"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/prekesKaina"
+            android:layout_alignBottom="@+id/prekesKaina"
+            android:layout_alignLeft="@+id/textView7"
+            android:layout_alignStart="@+id/textView7"
+            android:text="Kaina"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/textView5"
+            android:layout_below="@id/textView4"
+            android:layout_marginTop="30dp"
+            android:text="Likutis"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/prekesKaina"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/prekesPav"
+            android:text="TextView"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/prekesLikutis"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/dokNr"
+            android:layout_below="@id/prekesKaina"
+            android:layout_marginTop="30dp"
+            android:text="TextView"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

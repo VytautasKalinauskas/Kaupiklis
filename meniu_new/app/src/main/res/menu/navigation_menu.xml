@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_scan"
+        android:title="Inventorizacija"
+        android:icon="@mipmap/ic_camera_enhance_black_24dp"></item>
+
+    <item android:id="@+id/nav_purchasing"
+        android:title="Pirkimai"
+        android:icon="@mipmap/ic_camera_enhance_black_24dp"></item>
+
+    <item android:id="@+id/nav_selling"
+        android:title="Pardavimai"
+        android:icon="@mipmap/ic_camera_enhance_black_24dp"></item>
+
+    <item android:id="@+id/nav_list"
+        android:title="Prekių sąrašas"
+        android:icon="@drawable/ic_list_black_24dp"
+        ></item>
+
+    <item
+        android:id="@+id/nav_import"
+        android:icon="@mipmap/import_log"
+        android:title="Importuoti"></item>
+
+    <item android:id="@+id/nav_export"
+        android:title="Eksportuoti"
+        android:icon="@mipmap/export_log"></item>
+
+    <item android:id="@+id/nav_settings"
+        android:title="Nustatymai"
+        android:icon="@mipmap/ic_settings_black_24dp"></item>
+
+    <item android:id="@+id/nav_archive"
+        android:title="Archyvas"
+        android:icon="@drawable/ic_archive_black_24dp"></item>
+
+    <item android:id="@+id/nav_register"
+        android:title="Registracija"
+        android:icon="@mipmap/register"></item>
+
+    <item android:id="@+id/nav_contacts"
+        android:title="Kontaktai"
+        android:icon="@drawable/ic_contacts_black_24dp"></item>
+
+    <item android:id="@+id/nav_exit"
+        android:title="Baigti darbą"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"></item>
+
+
+</menu>

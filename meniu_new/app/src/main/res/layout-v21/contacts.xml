@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_height="230dp"
+        android:layout_width="match_parent"
+        android:id="@+id/cardVirginijus"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/image_virginijus"
+                android:src="@drawable/round_virginijus"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/textViewVirginijus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_virginijus"
+                android:layout_centerHorizontal="true"
+                android:text="Virginijus Kalinauskas"
+                android:textColor="#FFFFFF"
+                android:textAppearance="@android:style/TextAppearance.Material.Title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/administratorius"
+                android:text="Administratorius"
+                android:textColor="#FFFFFF"
+                android:layout_below="@id/textViewVirginijus"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/iconPhone2"
+                android:src="@drawable/ic_local_phone_black_24dp"
+                android:layout_below="@id/administratorius"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/iconEmail2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_below="@id/iconPhone2"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_email_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="vkalinauskas@yahoo.com"
+                android:textColorLink="#FFFFFF"
+                android:autoLink="email"
+                android:layout_toRightOf="@id/iconEmail2"
+                android:layout_marginLeft="8dp"
+                android:layout_alignBottom="@id/iconEmail2"
+                android:layout_marginBottom="6dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iconPhone2"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/iconPhone2"
+                android:autoLink="phone"
+                android:text="+37068636532"
+                android:textColorLink="#FFFFFF" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_height="230dp"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:id="@+id/cardVytautas"
+        android:layout_below="@id/cardVirginijus"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/image_vycka"
+            android:src="@drawable/vycka_round2"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            />
+
+            <TextView
+                android:id="@+id/textViewVytautas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_vycka"
+                android:layout_centerHorizontal="true"
+                android:text="Vytautas Kalinauskas"
+                android:textColor="#FFFFFF"
+                android:textAppearance="@android:style/TextAppearance.Material.Title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/programuotojas"
+                android:text="Programuotojas"
+                android:textColor="#FFFFFF"
+                android:layout_below="@id/textViewVytautas"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/iconPhone"
+                android:src="@drawable/ic_local_phone_black_24dp"
+                android:layout_below="@id/programuotojas"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+            />
+
+
+            <ImageView
+                android:id="@+id/iconEmail"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_below="@id/iconPhone"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_email_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="vytautas.kalinauskas@ktu.edu"
+                android:textColorLink="#FFFFFF"
+                android:autoLink="email"
+                android:layout_toRightOf="@id/iconEmail"
+                android:layout_alignBottom="@id/iconEmail"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="8dp"
+               />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                android:text="+37062542695"
+                android:textColorLink="#FFFFFF"
+                android:layout_toRightOf="@id/iconPhone"
+                android:layout_alignBottom="@id/iconPhone"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="8dp"
+                />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

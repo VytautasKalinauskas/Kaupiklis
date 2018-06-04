@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Kaupiklis</string>
+    <string name="main_menu">Main menu</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="scanner">Skeneris</string>
+    <string name="demo">Demo versija</string>
+    <string name="licenseVersion">Licenzijos numeris: </string>
+</resources>
